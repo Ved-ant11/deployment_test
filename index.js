@@ -4,6 +4,7 @@ const cors = require('cors');
 
 app.use(cors());
 const morgan = require("morgan");
+app.use(express.static("dist"));
 
 PORT = process.env.PORT || 3001;
 
